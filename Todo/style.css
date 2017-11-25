@@ -15,7 +15,7 @@ form {
 }
 input#tdInput {
     height:1.5em;
-    width: 79%;
+    width: calc(80% - 4px);
     font-size: 1.5em;
     float: left;
 }
@@ -23,7 +23,7 @@ input#tdInput {
 button.tdAdd {
     border-radius: 0;
     padding: 0;
-    width: 19%;
+    width: calc(20% - 2px);
     height: 42px;
     background-color: #09F;
     color: #FFF;
@@ -33,4 +33,10 @@ button.tdAdd {
 
 button.tdAdd:hover {
   background-color: #0bF;
+}
+
+ul#tdList {
+    list-style: none;
+    font-size: 1.5em;
+    padding: 1%;
 }
