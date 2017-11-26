@@ -47,7 +47,7 @@ ul li {
 }
 
 ul li.checked {
-    background: #888;
+    background: #ccc;
     color: #fff;
     text-decoration: line-through;
 }
@@ -62,4 +62,10 @@ ul li.checked::before {
       transform: rotate(45deg);
       height: 18px;
       width: 9px;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
 }
