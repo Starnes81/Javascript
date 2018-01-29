@@ -6,11 +6,13 @@
   </head>
   <body>
     <script>
-    var task = ['garbage','read a book', 'master javascript'];
+    var task = ['garbage','read a book', 'master javascript', 'sleep'];
 
     var progress =['done','in progress', 'to do'];
+    console.log(task[(task.length-1)]);
 
-    var question1 = prompt("which task 1-4?");
+    task[task.length]="new value";
+    var question1 = prompt("which task 1-"+task.length+"?");
     var question2 = prompt("status: 1 = done 2= in progress 3 = to do?");
 
     console.log("today you will "+ task[(question1-1)]+" Status of "+progress[(question2-1)]);
